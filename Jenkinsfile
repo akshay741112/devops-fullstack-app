@@ -8,7 +8,7 @@ pipeline {
                     usernamePassword(credentialsId: 'jenkins-git-credentials', passwordVariable: 'password', usernameVariable: 'username')
                 ]) {
                     git branch: 'main',
-                        credentialsId: 'githubcred',
+                        credentialsId: 'jenkins-git-credentialss',
                         url: 'https://github.com/akshay741112/devops-fullstack-app.git'
                 }
             }
